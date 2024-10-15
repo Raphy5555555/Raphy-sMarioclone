@@ -1,0 +1,226 @@
+body, ul, li, h1, h2, a{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+} 
+
+header{
+    text-align: center;
+    background: red;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+header h1{
+    display: inline-block;
+    padding: 6px 12px;
+    border: 8px solid white;
+    border-radius: 40px;
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome {
+    background-color: #feb614;
+    color: white;
+    position: absolute;
+    padding: 30px;
+    top: 30%;
+    left: 0px;
+}    
+.banner .welcome h2{
+    font-size: 74px;
+}
+.banner .welcome h2 span{
+    font-size: 1.3em;
+}
+
+nav{
+    padding: 20px;
+    background: rgb(207, 215, 222);
+    position: sticky;
+    top: 105px;
+}
+
+nav ul{
+    max-width: 1200px;
+    white-space: nowrap;
+    margin: 0px auto;
+
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.joint{
+    color: red;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px; 
+    box-sizing: border-box;   
+}
+
+article h1{
+    color: red;
+    font-size: 48px;
+}
+
+article p{
+    line-height: 2em;
+    color:#4b4b4b;
+}
+main .images{
+    margin: 80px 0px;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+main .images li{
+    text-decoration: none;
+    display: inline-block;
+    width: 40%;
+    margin: 10px 5%;
+
+}
+
+main .images img{
+   max-width: 100%;
+}
+
+.join{
+    max-width: 100%;
+    margin: auto;
+    background: lightgray;
+    color: #4b4b4b;
+    text-align: center;
+    padding: 60px 20px;
+}
+.join h1{
+    font-size: 32px;
+}
+.join p{
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+form input{
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 3px solid white;
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background: red;
+    text-align: center;
+}
+
+
+/* responzive styles */
+
+@media screen  and (max-width: 1400px){
+    .banner .welcome h2{
+    font-size: 64px;
+    }
+}
+
+@media screen  and (max-width: 1000px){
+    .banner .welcome h2{
+    font-size: 50px;
+    }
+}
+@media screen  and (max-width: 800px){
+    .banner .welcome{
+        position: relative;
+    }
+    .banner .welcome h2{
+        font-size: 30px; 
+        text-align: center;
+    }
+    .banner .welcome h2 br{
+        display: none;
+    }
+    .banner .welcome h2 span{
+        font-size: 1em;
+    }
+    main .images{
+        margin: 0px;
+        max-width: 100%;
+
+    }
+    main .images li{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
+    nav li{
+        width: 100%;
+        display: block;
+        margin-top: 10px ;
+    }
+    header{
+        text-align: center;
+        background: red;
+        color: white;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    header h1{
+        display: inline-block;
+        font-size: 30px;
+        padding: 6px 12px;
+        border: 8px solid white;
+        border-radius: 40px;
+    }
+}
+
+/* Transitions */
+nav li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+nav li a.joint:hover{
+    text-decoration: underline;
+    color: #4b4b4b;
+}
+
+p::selection{
+    background-color: red;
+    color: white; 
+}
+
+form input:focus{
+    border: 3px solid #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 3px solid rgb(31, 193, 31);
+    outline: none;
+}
+footer:hover{
+    color: pink;
+
+}
